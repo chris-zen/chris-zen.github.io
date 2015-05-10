@@ -173,7 +173,7 @@ makes it very convenient and easy to use.
 
 You can encapsulate all the code required to create an embedded node with the
 following code (adapted from [this
-post](http://cupofjava.de/blog/2012/11/27/embedded-elasticsearch-server-for-tests/)):
+post](http://cupofjava.de/blog/2012/11/27/embedded-elasticsearch-server-for-tests/) and [this post](https://orrsella.com/2014/10/28/embedded-elasticsearch-server-for-scala-integration-tests/)):
 
 {% highlight scala %}
 package example
