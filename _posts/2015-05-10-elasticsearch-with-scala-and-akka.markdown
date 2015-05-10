@@ -94,9 +94,9 @@ val hits = respFuture.map { response =>
 }
 {% endhighlight %}
 
-# Real life example with actors
+# Actor example
 
-Let's see a real life example on how to do a search without blocking an actor.
+Let's see an example on how to do a search without blocking an actor.
 The following code have an actor that does an aggregation by timestamp when
 receives a StartQuery message and returns a QueryResult with the list of
 intervals found in the elasticsearch query result.
