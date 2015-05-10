@@ -1,0 +1,13 @@
+# Site settings
+title: Christian Perez-LLamas
+email:
+description: > # this means to ignore newlines until "baseurl:"
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://chris-zen.github.io" # the base hostname & protocol for your site
+twitter_username: chris_zen
+github_username:  chris-zen
+linkedin_profile: https://www.linkedin.com/in/christianperezllamas
+
+# Build settings
+markdown: kramdown
