@@ -4,6 +4,7 @@ title:  "ElasticSearch with Scala and Akka"
 date:   2015-05-10 21:30:00
 categories: software
 tags: elasticsearch scala akka
+comments: True
 ---
 # Introduction
 I am working in a project that involves Elasticsearch, Scala and Akka,
