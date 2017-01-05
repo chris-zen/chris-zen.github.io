@@ -81,7 +81,7 @@ If you prefer to live in the edge ;-) you can use the master branch by including
 coremidi = { git = "https://github.com/chris-zen/coremidi", branch="master" }
 {% endhighlight %}
 
-To play with the source code yourself you can clone the repo and build the code and documentation with the following commands:
+To play with the source code yourself you can clone [the repo](https://github.com/chris-zen/coremidi) and build the code and documentation with the following commands:
 
 {% highlight sh %}
 git clone https://github.com/chris-zen/coremidi.git
