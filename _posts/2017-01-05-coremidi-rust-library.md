@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CoreMIDI library for Rust"
-date:   2017-01-04 21:30:00
+date:   2017-01-05 12:30:00
 categories: software
 tags: rust midi osx coremidi
 comments: True
@@ -12,24 +12,22 @@ comments: True
 
 This blog post is to announce my first contribution to the open source Rust community with a library to interface CoreMIDI with Rust.
 
-The initial goal with this library was to cover the basic functionality from the CoreMIDI framework and let the door open for contributions to fulfill the rest of the functionalities. By basic functionality I mean:
+The initial goal for this library was to cover the basic functionality from the CoreMIDI framework and let the door open for contributions to fulfill the rest of them. By basic functionality I mean:
 
+- Enumerate system source and destination endpoints.
 - Being able to create a client.
 - Being able to send MIDI data either to output ports or through virtual sources.
 - Being able to receive MIDI data either from input ports connected to sources or through virtual destinations.
-- Enumerate system source and destination endpoints.
 
-But the CoreMIDI framework includes much more things such as:
+But the CoreMIDI framework includes more things:
 
-- Client notifications.
-- Objects properties.
 - Sysex data.
 - Enumerate devices and entities.
 - MIDI Setup.
 - MIDI Thru connections.
 - MIDI network connections.
 
-My main motivation to get involved on this project, was the fact that I am building my own MIDI controllers with micro-controllers, and needed to interface them to my computer. Given that I work now with a Mac OSX laptop, I initially tried to use Swift and its official CoreMIDI binding, but soon I discovered that Swift is still in its very early days regarding package management, building tooling, and open source community. Then I went to see what Rust could provide me in this field, and it was quite surprising to find some work around CoreMIDI. Unfortunately no one provided a perfect solution for my project, but it was a very good starting point for me to start working on my own library.
+My main motivation to get involved on this project, was the fact that I am building my own MIDI controllers with micro-controllers, and needed to interface them to my computer. Given that I work now with a Mac OSX laptop, I initially tried to use Swift and its official CoreMIDI binding, but soon I discovered that Swift is still in its very early days regarding package management, building tooling, and open source community. Then I went to see what Rust could provide me in this field, and it was quite surprising to find some work around CoreMIDI. Unfortunately no one provided the perfect solution for my project, but at least I had something to start building on.
 
 These are the libraries that existed when I decided to work on my own:
 
@@ -73,7 +71,7 @@ The library is published into [crates.io](https://crates.io/crates/coremidi), so
 
 {% highlight toml %}
 [dependencies]
-coremidi = "^0.0.2"
+coremidi = "^0.1.0"
 {% endhighlight %}
 
 If you prefer to live in the edge ;-) you can use the master branch by including this instead:
