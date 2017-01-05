@@ -135,14 +135,14 @@ fn main() {
     println!("System destinations:");
 
     for (i, destination) in coremidi::Destinations.into_iter().enumerate() {
-        let display_name = destination.display_name.unwrap();
+        let display_name = destination.display_name().unwrap();
         println!("[{}] {}", i, display_name);
     }
 
     println!("\nSystem sources:");
 
     for (i, source) in coremidi::Sources.into_iter().enumerate() {
-        let display_name = source.display_name.unwrap();
+        let display_name = source.display_name().unwrap();
         println!("[{}] {}", i, display_name);
     }
 }
